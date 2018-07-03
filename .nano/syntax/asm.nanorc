@@ -1,0 +1,15 @@
+#Assembly Language Source Code File
+syntax "asm" "\.(S|s|asm)$"
+
+color magenta "\<[A-Z_]{2,}\>"
+color brightblue "\.(data|subsection|text)"
+color cyan "\.(align|extern|file|globl|global|hidden|section|set|size|space|type|weak)"
+color brightyellow "\.(ascii|asciz|byte|double|float|hword|int|long|short|single|struct|word)"
+icolor brightgreen "^[[:space:]]*[.0-9A-Z_]*:"
+color brightblack "(^|[[:space:]])#([^{].*)?$"
+color brightmagenta "^[[:space:]]*#[[:space:]]*(define|undef|include|ifn?def|endif|elif|else|if|warning|error)"
+color blue "\<(call|cli|hlt|jmp|mov|push)\>"
+color yellow "(^|[[:space:]]);([^{].*)?$"
+
+# Show trailing whitespace
+#color ,green "[[:space:]]+$"
