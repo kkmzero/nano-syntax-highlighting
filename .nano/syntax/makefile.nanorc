@@ -1,0 +1,22 @@
+#Makefile
+syntax "makefile" "([Mm]akefile|\.ma?k)$"
+
+color cyan  "\<(if|ifeq|ifdef|ifneq|ifndef|else|endif)\>"
+color cyan  "^(export|include|override)\>"
+color brightgreen  "^[^:=	]+:"
+color brightred "[=,%]" "\+=|\?=|:=|&&|\|\|"
+color brightyellow "\$\((abspath|addprefix|addsuffix|and|basename|call|dir)[[:space:]]"
+color brightyellow "\$\((error|eval|filter|filter-out|findstring|firstword)[[:space:]]"
+color brightyellow "\$\((flavor|foreach|if|info|join|lastword|notdir|or)[[:space:]]"
+color brightyellow "\$\((origin|patsubst|realpath|shell|sort|strip|suffix)[[:space:]]"
+color brightyellow "\$\((value|warning|wildcard|word|wordlist|words)[[:space:]]"
+color white    "[()$]"
+color magenta ""(\\.|[^"])*"|'(\\.|[^'])*'"
+color brightblue "\$+(\{[^} ]+\}|\([^) ]+\))"
+color brightblue "\$[@^<*?%|+]|\$\([@^<*?%+-][DF]\)"
+color brightblue   "\$\$|\\.?"
+color brightblack "(^|[[:space:]])#([^{].*)?$"
+color cyan  "^	@#.*"
+
+# Show trailing whitespace
+#color ,green "[[:space:]]+$"

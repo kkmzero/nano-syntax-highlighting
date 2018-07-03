@@ -1,0 +1,15 @@
+#DOS Batch File
+syntax "bat" "\.bat$"
+
+color brightblue "\<(assoc|break|call|cd|chdir|chcp|cls|color|copy|date|del|else|erase|dir|echo|endlocal|exit|for|ftype|goto|if|md|mkdir|mklink|move|path|pause|popd|prompt|pushd|rd|rmdir|ren|rename|set|setlocal|shift|start|time|title|type|ver|verify|vol|in|defined|do|exist|gtr|not)\>"
+color brightmagenta "\<(arp|at|attrib|bcdedit|cacls|chcp|chkdsk|chkntfs|choice|cipher|clip|cmd|comp|compact|convert|debug|diskcomp|diskcopy|diskpart|doskey|driverquery|expand|fc|find|findstr|forfiles|format|fsutil|gpresult|graftabl|help|icacls|ipconfig|label|makecab|mode|more|net|openfiles|ping|recover|reg|replace|robocopy|rundll32|sc|schtasks|setx|shutdown|sort|subst|systeminfo|taskkill|tasklist|timeout|tree|where|wmic|xcopy)\>"
+color brightgreen ":,*(#[0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*)\>"
+color magenta "%,*([0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*)\>"
+color magenta start="%" end="%*"
+color yellow "%%,*([0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*)\>"
+color white "(^|[[:space:]])(REM|rem)([^{].*)?$"
+color brightblack "(^|[[:space:]])::([^{].*)?$"
+color red ""[^"]*"|qq\|.*\|"
+
+# Show trailing whitespace
+#color ,green "[[:space:]]+$"
