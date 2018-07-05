@@ -1,0 +1,9 @@
+#Cascading Style Sheets
+syntax "css" "\.(css|scss)$"
+
+color brightblue     "."
+color white  start="\{" end="\}"
+color magenta   start=":" end="[;^\{]"
+color yellow   ":active|:focus|:hover|:link|:visited|:link|:after|:before|$"
+color brightblack    start="\/\*" end="\*\/"
+color white         ";|:|\{|\}"
