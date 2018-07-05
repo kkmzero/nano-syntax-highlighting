@@ -2,8 +2,11 @@ include ~/.nano/syntax/asm.nanorc
 include ~/.nano/syntax/bat.nanorc
 include ~/.nano/syntax/c.nanorc
 include ~/.nano/syntax/cpp.nanorc
+include ~/.nano/syntax/css.nanorc
+include ~/.nano/syntax/glsl.nanorc
 include ~/.nano/syntax/h.nanorc
 include ~/.nano/syntax/html.nanorc
+include ~/.nano/syntax/hlsl.nanorc
 include ~/.nano/syntax/ini.nanorc
 include ~/.nano/syntax/makefile.nanorc
 include ~/.nano/syntax/xml.nanorc
