@@ -1,0 +1,9 @@
+#Brainfuck Programming Language
+syntax "bf" "\.bf$"
+
+color brightblack  "^.*"
+color brightblue "[+-]"
+color brightmagenta "[><]"
+color brightwhite "\["
+color brightwhite "\]"
+color brightwhite "[.,]"
