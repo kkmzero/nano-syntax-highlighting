@@ -1,5 +1,6 @@
 include ~/.nano/syntax/asm.nanorc
 include ~/.nano/syntax/bat.nanorc
+include ~/.nano/syntax/bf.nanorc
 include ~/.nano/syntax/c.nanorc
 include ~/.nano/syntax/cpp.nanorc
 include ~/.nano/syntax/css.nanorc
