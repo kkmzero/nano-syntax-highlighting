@@ -1,11 +1,14 @@
 #Hypertext Markup Language File
 syntax "html" "\.htm[l]?$"
 
-color brightblue start="<" end=">"
-color cyan "&[^;[[:space:]]]*;"
-color magenta ""[^"]*"|qq\|.*\|"
-color magenta "'[^"]*'|qq\|.*\|"
-color white "(align|alt|bgcolor|border|charset|class|content|frameborder|height|href|id|label|longdesc|media|name|onclick|onfocus|onload|onmouseover|rel|scrolling|size|span|src|style|target|type|value|width)="
+color brightblue   start="<" end=">"
+color cyan         "&[^;[[:space:]]]*;"
+color magenta      ""[^"]*"|qq\|.*\|"
+color magenta      "'[^"]*'|qq\|.*\|"
+color white        "(align|alt|bgcolor|border|charset|class|content|frameborder|height|href|id|label|longdesc|media|name|onclick|onfocus|onload|onmouseover|rel|scrolling|size|span|src|style|target|type|value|width)="
 color brightblack  start="<!--" end="-->"
 color brightwhite  start="<!(doctype|DOCTYPE)" end=">"
-color white "&(#[0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*);"
+color white        "&(#[0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*);"
+
+#Show trailing whitespace
+#color ,green "[[:space:]]+$"
