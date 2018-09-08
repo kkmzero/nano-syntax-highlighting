@@ -1,27 +1,27 @@
-#C++ Source File
+#C++ Language Source File
 syntax "c" "\.(cpp|Cpp)$"
 
-color brightmagenta     "\<[A-Z_][0-9A-Z_]+\>"
-color blue      "\<(float|double|bool|char|int|nullptr|short|long|void|(un)?signed)\>"
-color blue      "\<[a-z0-9_]+_t\>"
-color blue   "\<(struct|enum|static|const|union|template|typedef|extern)\>"
-color brightwhite "\<(namespace|using)\>"
-color brightblue   "\<(for|if|while|do|else|case|default|switch)\>"
-color brightblue   "\<(return|inline|sizeof|auto|register|volatile|restrict)\>"
-color brightblue   "\<(try|throw|catch|operator|new|delete)\>"
-color brightblue      "\<(goto|break|continue)\>"
-color magenta "\<(true|false)\>"
-color white  "[-+/*=<>?:!~%&|^]"
-color magenta    "\<([0-9]+|0x[0-9a-fA-F]*)\>|'.'"
-color magenta     "^[[:space:]]*#[[:space:]]*(define|include(_next)?|(un|ifn?)def|endif|el(if|se)|if|warning|error|pragma)"
-color yellow "__attribute__[[:space:]]*\(\([^)]*\)\)" "__(aligned|asm|builtin|hidden|inline|packed|restrict|section|typeof|weak)__"
-color magenta    ""(\\.|[^"])*"|<[A-Za-z_./-]+>"
-color yellow    "\\([\"'abfnrtv\\]|[0-3]?[0-7]{1,2}|x[A-Fa-f0-9]{1,2}|$)"
-color brightblack "(^|[[:space:]])//.*"
-color brightblack start="/\*" end="\*/"
+color brightmagenta      "\<[A-Z_][0-9A-Z_]+\>"
+color blue               "\<(float|double|bool|char|int|nullptr|short|long|void|(un)?signed)\>"
+color blue               "\<[a-z0-9_]+_t\>"
+color blue               "\<(struct|enum|static|const|union|template|typedef|extern)\>"
+color brightwhite        "\<(namespace|using)\>"
+color brightblue         "\<(for|if|while|do|else|case|default|switch)\>"
+color brightblue         "\<(return|inline|sizeof|auto|register|volatile|restrict)\>"
+color brightblue         "\<(try|throw|catch|operator|new|delete)\>"
+color brightblue         "\<(goto|break|continue)\>"
+color magenta            "\<(true|false)\>"
+color white              "[-+/*=<>?:!~%&|^]"
+color magenta            "\<([0-9]+|0x[0-9a-fA-F]*)\>|'.'"
+color magenta            "^[[:space:]]*#[[:space:]]*(define|include(_next)?|(un|ifn?)def|endif|el(if|se)|if|warning|error|pragma)"
+color yellow             "__attribute__[[:space:]]*\(\([^)]*\)\)" "__(aligned|asm|builtin|hidden|inline|packed|restrict|section|typeof|weak)__"
+color magenta            ""(\\.|[^"])*"|<[A-Za-z_./-]+>"
+color yellow             "\\([\"'abfnrtv\\]|[0-3]?[0-7]{1,2}|x[A-Fa-f0-9]{1,2}|$)"
+color brightblack        "(^|[[:space:]])//.*"
+color brightblack        start="/\*" end="\*/"
 color brightblack,yellow "TODO:?"
 
-# Show trailing whitespace
+#Show trailing whitespace
 #color ,green "[[:space:]]+$"
 
 # +EXTRALINT
