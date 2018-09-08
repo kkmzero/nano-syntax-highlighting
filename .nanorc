@@ -1,3 +1,6 @@
+#set linenumbers
+#set constantshow
+
 include ~/.nano/syntax/asm.nanorc
 include ~/.nano/syntax/bat.nanorc
 include ~/.nano/syntax/bf.nanorc
