@@ -1,6 +1,9 @@
 #Windows Initialization File
 syntax "ini" "\.ini$"
 
-color brightblue start="\[" end="\]"
+color brightblue  start="\[" end="\]"
 color brightblack "(^|[[:space:]]);([^{].*)?$"
-color white  "(#[0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*)="
+color white       "(#[0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*)="
+
+#Show trailing whitespace
+#color ,green "[[:space:]]+$"
