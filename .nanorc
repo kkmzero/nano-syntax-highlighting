@@ -15,4 +15,5 @@ include ~/.nano/syntax/hlsl.nanorc
 include ~/.nano/syntax/ini.nanorc
 include ~/.nano/syntax/lua.nanorc
 include ~/.nano/syntax/makefile.nanorc
+include ~/.nano/syntax/pwn.nanorc
 include ~/.nano/syntax/xml.nanorc
