@@ -1,12 +1,12 @@
 #Pawn Language Source File
 syntax "pwn" "\.(pwn|inc)$"
 
-color brightmagenta      "\<[A-Z_][0-9A-Z_]+\>"
+color lightmagenta      "\<[A-Z_][0-9A-Z_]+\>"
 color blue               "\<(Fixed|bool|Float)\>"
 color blue               "\<[a-z0-9_]+_t\>"
 color blue               "\<(enum|const|char)\>"
-color brightblue         "\<(assert|for|if|while|do|else|case|default|switch|return|forward|continue)\>"
-color brightblue         "\<(new|exit|goto|sleep|state|sizeof|tagof|char)\>"
+color lightblue         "\<(assert|for|if|while|do|else|case|default|switch|return|forward|continue)\>"
+color lightblue         "\<(new|exit|goto|sleep|state|sizeof|tagof|char)\>"
 color cyan               "\<(public|stock)\>"
 color magenta            "\<(true|false)\>"
 color white              "[-+/*=<>?:!~%&|^]"
@@ -14,9 +14,9 @@ color magenta            "\<([0-9]+|0x[0-9a-fA-F]*)\>|'.'"
 color magenta            "^[[:space:]]*#[[:space:]]*(define|include(_next)?|(un|ifn?)def|endif|el(if|se)|if|warning|error|pragma)"
 color magenta            ""(\\.|[^"])*"|<[A-Za-z_./-]+>"
 color yellow             "\\([\"'abfnrtv\\]|[0-3]?[0-7]{1,2}|x[A-Fa-f0-9]{1,2}|$)"
-color brightblack        "(^|[[:space:]])//.*"
-color brightblack        start="/\*" end="\*/"
-color brightblack,yellow "TODO:?"
+color lightblack        "(^|[[:space:]])//.*"
+color lightblack        start="/\*" end="\*/"
+color lightblack,yellow "TODO:?"
 
 #Show trailing whitespace
 #color ,green "[[:space:]]+$"
