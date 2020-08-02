@@ -1,11 +1,11 @@
 #Cascading Style Sheets
 syntax "css" "\.(css|scss)$"
 
-color brightblue  "."
+color lightblue  "."
 color white       start="\{" end="\}"
 color magenta     start=":" end="[;^\{]"
 color yellow      ":active|:focus|:hover|:link|:visited|:link|:after|:before|$"
-color brightblack start="\/\*" end="\*\/"
+color lightblack start="\/\*" end="\*\/"
 color white       ";|:|\{|\}"
 
 #Show trailing whitespace
