@@ -1,0 +1,12 @@
+#Brainfuck Programming Language
+syntax "bf" "\.bf$"
+
+color lightblack   "^.*"
+color lightblue    "[+-]"
+color lightmagenta "[><]"
+color lightwhite   "\["
+color lightwhite   "\]"
+color lightwhite   "[.,]"
+
+#Show trailing whitespace
+#color ,green "[[:space:]]+$"
