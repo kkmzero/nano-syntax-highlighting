@@ -3,6 +3,7 @@
 set indicator
 set nonewlines
 
+include ~/.nano/syntax/extra/nanorc.nanorc
 include ~/.nano/syntax/extra/asm.nanorc
 include ~/.nano/syntax/extra/bat.nanorc
 include ~/.nano/syntax/extra/bf.nanorc
