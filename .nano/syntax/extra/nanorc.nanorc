@@ -1,0 +1,20 @@
+#GNU nano’s configuration file
+syntax "nanorc" "\.(nanorc|Nanorc)$"
+
+color bold,italic,lightcyan "(bold|italic)"
+
+color bold,red              "\<(set|unset)\>"
+color italic,lightblue      " \<(afterends|allow_insecure_backup|atblanks|autoindent|backup|backupdir|boldtext|bookstyle|brackets|breaklonglines|casesensitive|constantshow|cutfromcursor|emptyline|errorcolor|fill|functioncolor|guidestripe|historylog|indicator|jumpyscrolling|keycolor|linenumbers|locking|matchbrackets|morespace|mouse|multibuffer|noconvert|nohelp|nonewlines|nopauses|nowrap|numbercolor|operatingdir|positionlog|preserve|punct|quickblank|quotestr|rawsequences|rebinddelete|regexp|saveonexit|selectedcolor|showcursor|smarthome|smooth|softwrap|speller|statuscolor|stripecolor|suspendable|tabsize|tabstospaces|titlecolor|trimblanks|unix|view|whitespace|wordbounds|wordchars|zap)\>"
+color bold,lightyellow      "<\(syntax|header|magic|formatter|linter|comment|tabgives|color|icolor|include|extendsyntax)\>"
+
+color italic,lightcyan      "(red|green|blue|magenta|yellow|cyan|white|black|lightred|lightgreen|lightblue|lightmagenta|lightyellow|lightcyan|lightwhite|lightblack)"
+color italic,cyan           "(pink|purple|mauve|lagoon|mint|lime|peach|orange|latte|normal)"
+
+#Strings
+color italic,normal ""(\\.|[^"])*""
+
+#Comments
+color italic,lightblack "(^|[[:space:]])#([^{].*)?$"
+
+#Show trailing whitespace
+#color ,green "[[:space:]]+$"
