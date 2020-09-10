@@ -14,7 +14,8 @@ color italic,cyan           "(pink|purple|mauve|lagoon|mint|lime|peach|orange|la
 color italic,normal ""(\\.|[^"])*""
 
 #Comments
-color italic,white "(^|[[:space:]])#([^{].*)?$"
+color italic,lightblack    "(^|[[:space:]])#([^{].*)?$"
+color italic,black,yellow  "TODO:?"
 
 #Show trailing whitespace
 #color ,green "[[:space:]]+$"
