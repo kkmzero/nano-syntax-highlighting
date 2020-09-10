@@ -1,2 +1,2 @@
 install:
-	sudo cp .nanorc ~/ && cp -r .nano/ ~/
+	cp .nanorc ~/ && cp -r .nano/ ~/
