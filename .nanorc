@@ -3,6 +3,10 @@
 set indicator
 set nonewlines
 
+#TAB
+set tabsize 4
+set tabstospaces
+
 include ~/.nano/syntax/extra/nanorc.nanorc
 include ~/.nano/syntax/extra/asm.nanorc
 include ~/.nano/syntax/extra/bat.nanorc
