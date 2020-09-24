@@ -1,6 +1,9 @@
 #Makefile
 syntax "makefile" "([Mm]akefile|\.ma?k)$"
 
+#TAB
+tabgives "	"
+
 color cyan         "\<(if|ifeq|ifdef|ifneq|ifndef|else|endif)\>"
 color cyan         "^(export|include|override)\>"
 color lightyellow "^[^:=	]+:"
