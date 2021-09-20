@@ -1,1 +1,2 @@
 *.nanorc linguist-detectable=true
+*.nanorc linguist-language=nanorc
