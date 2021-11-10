@@ -1,21 +1,30 @@
-#GNU nano’s configuration file
+# Syntax highlighting/config dotfiles for GNU Nano
+# 2018 - 2021, Ivan Kmeťo
+#
+# CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+# https://creativecommons.org/publicdomain/zero/1.0/
+
+# GNU Nano’s configuration file
 syntax "nanorc" "\.(nanorc|Nanorc)$"
 
-color bold,italic,lightcyan "(bold|italic)"
+color bold,italic,cyan       "(bold|italic)"
 
-color bold,red              "\<(set|unset)\>"
-color italic,lightblue      " \<(afterends|allow_insecure_backup|atblanks|autoindent|backup|backupdir|boldtext|bookstyle|brackets|breaklonglines|casesensitive|constantshow|cutfromcursor|emptyline|errorcolor|fill|functioncolor|guidestripe|historylog|indicator|jumpyscrolling|keycolor|linenumbers|locking|matchbrackets|morespace|mouse|multibuffer|noconvert|nohelp|nonewlines|nopauses|nowrap|numbercolor|operatingdir|positionlog|preserve|punct|quickblank|quotestr|rawsequences|rebinddelete|regexp|saveonexit|selectedcolor|showcursor|smarthome|smooth|softwrap|speller|statuscolor|stripecolor|suspendable|tabsize|tabstospaces|titlecolor|trimblanks|unix|view|whitespace|wordbounds|wordchars|zap)\>"
-color bold,lightyellow      "<\(syntax|header|magic|formatter|linter|comment|tabgives|color|icolor|include|extendsyntax)\>"
+color bold,red               "\<(set|unset)\>"
+color italic,lightblue       "\<(afterends|allow_insecure_backup|atblanks|autoindent|backup|backupdir|boldtext|bookstyle|brackets|breaklonglines|casesensitive|constantshow|cutfromcursor|emptyline|errorcolor|fill|functioncolor|guidestripe|historylog|indicator|jumpyscrolling|keycolor|linenumbers|locking|matchbrackets|morespace|mouse|multibuffer|noconvert|nohelp|nonewlines|nopauses|nowrap|numbercolor|operatingdir|positionlog|preserve|punct|quickblank|quotestr|rawsequences|rebinddelete|regexp|saveonexit|selectedcolor|showcursor|smarthome|smooth|softwrap|speller|statuscolor|stripecolor|suspendable|tabsize|tabstospaces|titlecolor|trimblanks|unix|view|whitespace|wordbounds|wordchars|zap)\>"
+color bold,lightyellow       "<\(syntax|header|magic|formatter|linter|comment|tabgives|color|icolor|include|extendsyntax)\>"
 
-color italic,lightcyan      "(red|green|blue|magenta|yellow|cyan|white|black|lightred|lightgreen|lightblue|lightmagenta|lightyellow|lightcyan|lightwhite|lightblack)"
-color italic,cyan           "(pink|purple|mauve|lagoon|mint|lime|peach|orange|latte|normal)"
+color italic,lightcyan       "(red|green|blue|magenta|yellow|cyan|white|black|light(red|green|blue|magenta|yellow|cyan|white|black))"
+color italic,cyan            "(pink|purple|mauve|lagoon|mint|lime|peach|orange|latte|normal)"
 
 #Strings
-color italic,normal ""(\\.|[^"])*""
+color italic,normal          ""(\\.|[^"])*""
 
 #Comments
-color italic,lightblack    "(^|[[:space:]])#([^{].*)?$"
-color italic,black,yellow  "TODO:?"
+color italic,white           "(^|[[:space:]])#([^{].*)?$"
+color bold,italic,red        "TODO:?"
+color bold,italic,green      "NOTE:?"
+color bold,italic,peach      "CIV:?"
+
 
 #Show trailing whitespace
 #color ,green "[[:space:]]+$"
