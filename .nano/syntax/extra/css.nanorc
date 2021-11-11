@@ -1,12 +1,22 @@
-#Cascading Style Sheets
+# Syntax highlighting/config dotfiles for GNU Nano
+# 2018 - 2021, Ivan Kmeťo
+#
+# CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+# https://creativecommons.org/publicdomain/zero/1.0/
+
+# Cascading Style Sheets
 syntax "css" "\.(css|scss)$"
 
-color lightblue  "."
-color white       start="\{" end="\}"
-color magenta     start=":" end="[;^\{]"
-color yellow      ":active|:focus|:hover|:link|:visited|:link|:after|:before|$"
-color lightblack start="\/\*" end="\*\/"
-color white       ";|:|\{|\}"
+color blue                  ":active|:focus|:hover|:link|:visited|:link|:after|:before|$"
+color lightcyan             "#([0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*)"
+color italic,magenta        ""(\\.|[^"])*"|'(\\.|[^'])*'"
+
+#Comments
+color lightblack            start="\/\*" end="\*\/"
+color italic,black,red      "TODO:?"
+color italic,black,green    "NOTE:?"
+color italic,black,yellow   "CIV:?"
+
 
 #Show trailing whitespace
 #color ,green "[[:space:]]+$"
