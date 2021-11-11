@@ -1,27 +1,37 @@
-#Makefile
+# Syntax highlighting/config dotfiles for GNU Nano
+# 2018 - 2021, Ivan Kmeťo
+#
+# CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+# https://creativecommons.org/publicdomain/zero/1.0/
+
+# Makefile
 syntax "makefile" "([Mm]akefile|\.ma?k)$"
 
 #TAB
 tabgives "	"
 
-color cyan         "\<(if|ifeq|ifdef|ifneq|ifndef|else|endif)\>"
-color cyan         "^(export|include|override)\>"
-color lightyellow "^[^:=	]+:"
-color lightred    "[=,%]" "\+=|\?=|:=|&&|\|\|"
-color lightgreen  "\$\((abspath|addprefix|addsuffix|and|basename|call|dir)[[:space:]]"
-color lightgreen  "\$\((error|eval|filter|filter-out|findstring|firstword)[[:space:]]"
-color lightgreen  "\$\((flavor|foreach|if|info|join|lastword|notdir|or)[[:space:]]"
-color lightgreen  "\$\((origin|patsubst|realpath|shell|sort|strip|suffix)[[:space:]]"
-color lightgreen  "\$\((value|warning|wildcard|word|wordlist|words)[[:space:]]"
-color white        "[()$]"
-color magenta      ""(\\.|[^"])*"|'(\\.|[^'])*'"
-color lightblue   "\$+(\{[^} ]+\}|\([^) ]+\))"
-color lightblue   "\$[@^<*?%|+]|\$\([@^<*?%+-][DF]\)"
-color lightblue   "\$\$|\\.?"
-color cyan         "^	@#.*"
+color cyan                  "\<(if|ifeq|ifdef|ifneq|ifndef|else|endif)\>"
+color cyan                  "^(export|include|override)\>"
+color lightyellow           "^[^:=	]+:"
+color lightred              "[=,%]" "\+=|\?=|:=|&&|\|\|"
+color lightgreen            "\$\((abspath|addprefix|addsuffix|and|basename|call|dir)[[:space:]]"
+color lightgreen            "\$\((error|eval|filter|filter-out|findstring|firstword)[[:space:]]"
+color lightgreen            "\$\((flavor|foreach|if|info|join|lastword|notdir|or)[[:space:]]"
+color lightgreen            "\$\((origin|patsubst|realpath|shell|sort|strip|suffix)[[:space:]]"
+color lightgreen            "\$\((value|warning|wildcard|word|wordlist|words)[[:space:]]"
+color white                 "[()$]"
+color italic,magenta        ""(\\.|[^"])*"|'(\\.|[^'])*'"
+color lightblue             "\$+(\{[^} ]+\}|\([^) ]+\))"
+color lightblue             "\$[@^<*?%|+]|\$\([@^<*?%+-][DF]\)"
+color lightblue             "\$\$|\\.?"
+color cyan                  "^	@#.*"
 
 #Comments
-color italic,white "(^|[[:space:]])#([^{].*)?$"
+color lightblack            "(^|[[:space:]])#([^{].*)?$"
+color italic,black,red      "TODO:?"
+color italic,black,green    "NOTE:?"
+color italic,black,yellow   "CIV:?"
+
 
 #Show trailing whitespace
 #color ,green "[[:space:]]+$"
