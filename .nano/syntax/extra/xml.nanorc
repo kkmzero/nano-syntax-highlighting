@@ -1,16 +1,26 @@
-#Extensible Markup Language File
+# Syntax highlighting/config dotfiles for GNU Nano
+# 2018 - 2021, Ivan Kmeťo
+#
+# CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+# https://creativecommons.org/publicdomain/zero/1.0/
+
+# Extensible Markup Language File
 syntax "xml" "\.([jrs]html?|sgml?|xml|opml|xslt?|plist)$"
 
-color lightblue       start="<" end=">"
-color white            " [a-z_-]+="
-color magenta          ""(\\.|[^"])*"|'(\\.|[^'])*'"
-color lightwhite,red  "&"
-color white            "&(#[0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*);"
-color lightblack      start="<!--" end="-->"
-color lightwhite      start="<!(doctype|DOCTYPE)" end=">"
-color ,red             "	+ +| +	+"
+color lightblue             start="<" end=">"
+color white                 " [a-z_-]+="
+color italic,magenta        ""(\\.|[^"])*"|'(\\.|[^'])*'"
+color lightwhite,red        "&"
+color white                 "&(#[0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*);"
+color lightwhite            start="<!(doctype|DOCTYPE)" end=">"
+color ,red                  "	+ +| +	+"
+
+#Comments
+color lightblack            start="<!--" end="-->"
+color italic,black,red      "TODO:?"
+color italic,black,green    "NOTE:?"
+color italic,black,yellow   "CIV:?"
+
 
 #Show trailing whitespace
 #color ,green "[[:space:]]+$"
-
-# +EXTRALINT
