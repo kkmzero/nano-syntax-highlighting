@@ -1,15 +1,29 @@
-#Assembly Language Source Code File
+# Syntax highlighting/config dotfiles for GNU Nano
+# 2018 - 2021, Ivan Kmeťo
+#
+# CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+# https://creativecommons.org/publicdomain/zero/1.0/
+
+# Assembly Language Source Code File
 syntax "asm" "\.(S|s|asm)$"
 
-color yellow        "\<[A-Z_]{2,}\>"
-color lightblue    "\.(data|subsection|text)"
-color cyan          "\.(align|extern|file|globl|global|hidden|section|set|size|space|type|weak)"
-color blue          "\.(ascii|asciz|byte|double|float|hword|int|long|short|single|struct|word)"
-icolor lightyellow "^[[:space:]]*[.0-9A-Z_]*:"
-color lightblack   "(^|[[:space:]])#([^{].*)?$"
-color lightmagenta "^[[:space:]]*#[[:space:]]*(define|undef|include|ifn?def|endif|elif|else|if|warning|error)"
-color magenta       "\<(call|cli|hlt|jmp|mov|push)\>"
-color lightblack   "(^|[[:space:]]);([^{].*)?$"
+color lightmagenta          "\<[A-Z_]{2,}\>"
+color yellow                "\.(data|subsection|text)"
+color lightblue             "\.(align|extern|file|globl|global|hidden|section|set|size|space|string|type|weak)"
+color blue                  "\.(ascii|asciz|byte|double|float|hword|int|long|short|single|struct|word)"
+color lightcyan             "\<([0-9]+|0x[0-9a-fA-F]*)\>|'.'"
+icolor magenta              "^[[:space:]]*[.0-9A-Z_]*:"
+color lightmagenta          "^[[:space:]]*#[[:space:]]*(define|undef|include|ifn?def|endif|elif|else|if|warning|error)"
+color lightblue             "\<(call|cli|hlt|jmp|mov|push)\>"
+color italic,magenta        ""(\\.|[^"])*"|<[A-Za-z_./-]+>"
+
+#Comments
+color italic,lightblack     "(^|[[:space:]]);([^{].*)?$"
+color italic,lightblack     "(^|[[:space:]])#([^{].*)?$"
+color italic,black,red      "TODO:?"
+color italic,black,green    "NOTE:?"
+color italic,black,yellow   "CIV:?"
+
 
 #Show trailing whitespace
 #color ,green "[[:space:]]+$"
