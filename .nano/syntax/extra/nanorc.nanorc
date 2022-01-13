@@ -14,7 +14,7 @@ color italic,lightblue      "\<(afterends|allow_insecure_backup|atblanks|autoind
 color bold,lightyellow      "<\(syntax|header|magic|formatter|linter|comment|tabgives|color|icolor|include|extendsyntax)\>"
 
 color italic,lightcyan      "(red|green|blue|magenta|yellow|cyan|white|black|light(red|green|blue|magenta|yellow|cyan|white|black))"
-color italic,cyan           "(pink|purple|mauve|lagoon|mint|lime|peach|orange|latte|normal)"
+color italic,cyan           "(pink|purple|mauve|lagoon|mint|lime|peach|orange|latte|normal|rosy|beet|plum|sea|sky|slate|teal|sage|brown|ocher|sand|tawny|brick|crimson)"
 
 #Strings
 color italic,normal         ""(\\.|[^"])*""
