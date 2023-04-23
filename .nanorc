@@ -1,8 +1,9 @@
 # Syntax highlighting/config dotfiles for GNU Nano
-# 2018 - 2021, Ivan Kmeťo
+# 2018 - 2023, Ivan Kmeťo
 #
 # CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 # https://creativecommons.org/publicdomain/zero/1.0/
+
 
 #set linenumbers
 #set constantshow
@@ -11,7 +12,7 @@ set softwrap
 set indicator
 set nonewlines
 
-#TAB
+# TAB
 set tabsize 4
 set tabstospaces
 
@@ -25,8 +26,9 @@ include ~/.nano/syntax/extra/css.nanorc
 include ~/.nano/syntax/extra/fortran.nanorc
 include ~/.nano/syntax/extra/glsl.nanorc
 include ~/.nano/syntax/extra/h.nanorc
-include ~/.nano/syntax/extra/html.nanorc
 include ~/.nano/syntax/extra/hlsl.nanorc
+include ~/.nano/syntax/extra/holyc.nanorc
+include ~/.nano/syntax/extra/html.nanorc
 include ~/.nano/syntax/extra/ini.nanorc
 include ~/.nano/syntax/extra/lua.nanorc
 include ~/.nano/syntax/extra/makefile.nanorc
