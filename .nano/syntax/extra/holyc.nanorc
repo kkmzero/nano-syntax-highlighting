@@ -1,0 +1,27 @@
+# Syntax highlighting/config dotfiles for GNU Nano
+# 2018 - 2023, Ivan Kmeťo
+#
+# CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+# https://creativecommons.org/publicdomain/zero/1.0/
+
+# HolyC Language Source File
+syntax "hc" "\.(hc|HC)$"
+
+
+color bold,mauve             "#include"
+color bold,sky               "\<(U(0|8|16|32|64)|I(8|16|32|64)|F64)\>"
+color bold,rosy              "\<(for|if|while|do|else|case|default|switch|return|sizeof|goto|break|start|end)\>"
+color mint                   "\<(try|throw|catch|FileRead|Free|Print)\>"
+color sand                   "\<([0-9]+|0x[0-9a-fA-F]*)\>|'.'"
+color italic,mauve           ""(\\.|[^"])*""
+color sand                   "\\([\"'abfnrtv\\]|[0-3]?[0-7]{1,2}|x[A-Fa-f0-9]{1,2}|$)"
+
+# Comments
+color italic,slate           "(^|[[:space:]])//.*"
+color italic,slate           start="/\*" end="\*/"
+color italic,black,crimson   "(TODO|FIXME|BUG):?"
+color italic,black,lime      "NOTE:?"
+color italic,black,rosy      "CIV:?"
+
+# Show trailing whitespace
+color ,green                "[[:space:]]+$"
