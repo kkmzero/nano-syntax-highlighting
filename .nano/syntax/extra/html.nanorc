@@ -1,5 +1,5 @@
 # Syntax highlighting/config dotfiles for GNU Nano
-# 2018 - 2021, Ivan Kmeťo
+# 2018 - 2023, Ivan Kmeťo
 #
 # CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 # https://creativecommons.org/publicdomain/zero/1.0/
@@ -7,19 +7,19 @@
 # Hypertext Markup Language File
 syntax "html" "\.htm[l]?$"
 
-color lightblue             start="<" end=">"
-color cyan                  "&[^;[[:space:]]]*;"
-color lightcyan             "#([0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*)"
-color italic,magenta        ""(\\.|[^"])*"|'(\\.|[^'])*'"
-color white                 "(align|alt|bgcolor|border|charset|class|content|frameborder|height|href|id|label|longdesc|media|name|onclick|onfocus|onload|onmouseover|rel|scrolling|size|span|src|style|target|type|value|width)="
-color lightwhite            start="<!(doctype|DOCTYPE)" end=">"
 
-#Comments
-color lightblack            start="<!--" end="-->"
-color italic,black,red      "TODO:?"
-color italic,black,green    "NOTE:?"
-color italic,black,yellow   "CIV:?"
+color bold,sky               start="<" end=">"
+color sand                   "&#?[[:alnum:]]*;"
+color bold,mauve             "(align|alt|bgcolor|border|charset|class|content|frameborder|height|href|id|label|longdesc|media|name|onclick|onfocus|onload|onmouseover|rel|scrolling|size|span|src|style|target|type|value|width)="
+color italic,mauve           ""(\\.|[^"])*"|'(\\.|[^'])*'"
+color sand                   "#([0-9]+|[0-9a-fA-F]*)"
+color bold,lightwhite        start="<!(doctype|DOCTYPE)" end=">"
 
+# Comments
+color italic,slate           start="<!--" end="-->"
+color italic,black,crimson   "(TODO|FIXME|BUG):?"
+color italic,black,lime      "NOTE:?"
+color italic,black,rosy      "CIV:?"
 
-#Show trailing whitespace
-#color ,green "[[:space:]]+$"
+# Show trailing whitespace
+color ,green                 "[[:space:]]+$"
