@@ -1,5 +1,5 @@
 # Syntax highlighting/config dotfiles for GNU Nano
-# 2018 - 2021, Ivan Kmeťo
+# 2018 - 2023, Ivan Kmeťo
 #
 # CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 # https://creativecommons.org/publicdomain/zero/1.0/
@@ -7,20 +7,18 @@
 # Extensible Markup Language File
 syntax "xml" "\.([jrs]html?|sgml?|xml|opml|xslt?|plist)$"
 
-color lightblue             start="<" end=">"
-color white                 " [a-z_-]+="
-color italic,magenta        ""(\\.|[^"])*"|'(\\.|[^'])*'"
-color lightwhite,red        "&"
-color white                 "&(#[0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*);"
-color lightwhite            start="<!(doctype|DOCTYPE)" end=">"
-color ,red                  "	+ +| +	+"
 
-#Comments
-color lightblack            start="<!--" end="-->"
-color italic,black,red      "TODO:?"
-color italic,black,green    "NOTE:?"
-color italic,black,yellow   "CIV:?"
+color bold,sky               start="<" end=">"
+color bold,mauve             " [a-z_-]+="
+color italic,mauve           ""(\\.|[^"])*"|'(\\.|[^'])*'"
+color sand                   "&(#[0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*);"
+color bold,lightwhite        start="<!(doctype|DOCTYPE)" end=">"
 
+# Comments
+color italic,slate           start="<!--" end="-->"
+color italic,black,crimson   "(TODO|FIXME|BUG):?"
+color italic,black,lime      "NOTE:?"
+color italic,black,rosy      "CIV:?"
 
-#Show trailing whitespace
-#color ,green "[[:space:]]+$"
+# Show trailing whitespace
+color ,green                 "[[:space:]]+$"
