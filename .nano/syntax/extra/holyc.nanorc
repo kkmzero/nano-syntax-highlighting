@@ -24,4 +24,4 @@ color italic,black,lime      "NOTE:?"
 color italic,black,rosy      "CIV:?"
 
 # Show trailing whitespace
-color ,green                "[[:space:]]+$"
+color ,green                 "[[:space:]]+$"
