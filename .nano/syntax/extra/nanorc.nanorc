@@ -9,7 +9,6 @@ syntax "nanorc" "\.(nanorc|Nanorc)$"
 
 
 color bold,italic,rosy       "(bold|italic)"
-
 color bold,mauve             "\<(set|unset|syntax)\>"
 color italic,rosy            "\<(afterends|allow_insecure_backup|atblanks|autoindent|backup|backupdir|boldtext|bookstyle|brackets|breaklonglines|casesensitive|constantshow|cutfromcursor|emptyline|errorcolor|fill|functioncolor|guidestripe|historylog|indicator|jumpyscrolling|keycolor|linenumbers|locking|matchbrackets|morespace|mouse|multibuffer|noconvert|nohelp|nonewlines|nopauses|nowrap|numbercolor|operatingdir|positionlog|preserve|punct|quickblank|quotestr|rawsequences|rebinddelete|regexp|saveonexit|selectedcolor|showcursor|smarthome|smooth|softwrap|speller|statuscolor|stripecolor|suspendable|tabsize|tabstospaces|titlecolor|trimblanks|unix|view|whitespace|wordbounds|wordchars|zap)\>"
 color bold,mauve             "<\(syntax|header|magic|formatter|linter|comment|tabgives|color|icolor|include|extendsyntax)\>"
@@ -28,4 +27,4 @@ color italic,black,lime      "NOTE:?"
 color italic,black,rosy      "CIV:?"
 
 # Show trailing whitespace
-color ,green "[[:space:]]+$"
+color ,green                 "[[:space:]]+$"
