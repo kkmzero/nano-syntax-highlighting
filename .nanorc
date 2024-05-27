@@ -1,5 +1,5 @@
 # Syntax highlighting/config dotfiles for GNU Nano
-# 2018 - 2023, Ivan Kmeťo
+# 2018 - 2024, Ivan Kmeťo
 #
 # CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 # https://creativecommons.org/publicdomain/zero/1.0/
@@ -11,6 +11,10 @@
 set softwrap
 set indicator
 set nonewlines
+
+# Text wrapping
+#set fill 80
+#set breaklonglines
 
 # TAB
 set tabsize 4
