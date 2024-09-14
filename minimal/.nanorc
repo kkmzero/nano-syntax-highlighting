@@ -1,0 +1,30 @@
+# Syntax highlighting/config dotfiles for GNU Nano
+# 2018 - 2024, Ivan Kmeťo
+#
+# CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+# https://creativecommons.org/publicdomain/zero/1.0/
+
+
+#set linenumbers
+#set constantshow
+#set mouse
+set softwrap
+set indicator
+set nonewlines
+
+# Text wrapping
+#set fill 80
+#set breaklonglines
+
+# TAB
+set tabsize 4
+set tabstospaces
+
+include ~/.nano/syntax/extra/nanorc.nanorc
+include ~/.nano/syntax/extra/c.nanorc
+include ~/.nano/syntax/extra/cpp.nanorc
+include ~/.nano/syntax/extra/css.nanorc
+include ~/.nano/syntax/extra/h.nanorc
+include ~/.nano/syntax/extra/html.nanorc
+include ~/.nano/syntax/extra/ini.nanorc
+include ~/.nano/syntax/extra/makefile.nanorc
