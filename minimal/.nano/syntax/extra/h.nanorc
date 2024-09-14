@@ -1,0 +1,31 @@
+# Syntax highlighting/config dotfiles for GNU Nano
+# 2018 - 2024, Ivan Kmeťo
+#
+# CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+# https://creativecommons.org/publicdomain/zero/1.0/
+
+# C/C++ Header Files
+syntax "c" "\.(h(h|pp|xx)?|H)$"
+
+
+color bold,normal              "\<[A-Z_][0-9A-Z_]+\>"
+color bold,normal              "\<(auto|float|double|bool|char|int|short|long|void|(un)?signed)\>"
+color bold,normal              "\<[a-z0-9_]+_t\>"
+color bold,normal              "\<(struct|enum|static|const|union|template|typedef|extern|virtual|static)\>"
+color bold,normal              "\<(namespace|using)\>"
+color bold,normal              "\<(class)\>"
+color bold,normal              "\<(public|private|protected|inline)\>"
+color bold,normal              "\<(for|if|while|do|else|case|default|switch)\>"
+color bold,normal              "\<(return|sizeof|register|volatile|restrict)\>"
+color bold,normal              "\<(try|throw|catch|operator|new|delete)\>"
+color bold,normal              "\<(goto|break|continue)\>"
+color bold,normal              "^[[:space:]]*#[[:space:]]*(define|include(_next)?|(un|ifn?)def|endif|el(if|se)|if|warning|error|pragma)"
+color italic,normal            ""(\\.|[^"])*"|<[A-Za-z_./-]+>"
+
+# Comments
+color italic,normal            "(^|[[:space:]])//.*"
+color italic,normal            start="/\*" end="\*/"
+color italic,black,lightwhite  "(TODO|FIXME|BUG|NOTE|CIV):?"
+
+# Show trailing whitespace
+color ,green                   "[[:space:]]+$"
