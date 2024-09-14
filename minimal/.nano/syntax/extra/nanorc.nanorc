@@ -1,0 +1,28 @@
+# Syntax highlighting/config dotfiles for GNU Nano
+# 2018 - 2024, Ivan Kmeťo
+#
+# CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+# https://creativecommons.org/publicdomain/zero/1.0/
+
+# GNU Nano’s configuration file
+syntax "nanorc" "\.(nanorc|Nanorc)$"
+
+
+color italic,normal            "(bold|italic)"
+color bold,normal              "\<(set|unset|syntax)\>"
+color italic,normal            "\<(afterends|allow_insecure_backup|atblanks|autoindent|backup|backupdir|boldtext|bookstyle|brackets|breaklonglines|casesensitive|constantshow|cutfromcursor|emptyline|errorcolor|fill|functioncolor|guidestripe|historylog|indicator|jumpyscrolling|keycolor|linenumbers|locking|matchbrackets|morespace|mouse|multibuffer|noconvert|nohelp|nonewlines|nopauses|nowrap|numbercolor|operatingdir|positionlog|preserve|punct|quickblank|quotestr|rawsequences|rebinddelete|regexp|saveonexit|selectedcolor|showcursor|smarthome|smooth|softwrap|speller|statuscolor|stripecolor|suspendable|tabsize|tabstospaces|titlecolor|trimblanks|unix|view|whitespace|wordbounds|wordchars|zap)\>"
+color bold,normal              "<\(header|magic|formatter|linter|comment|tabgives|color|icolor|include|extendsyntax)\>"
+
+# Color List
+color italic,normal            "(red|green|blue|magenta|yellow|cyan|white|black|light(red|green|blue|magenta|yellow|cyan|white|black))"
+color italic,normal            "(pink|purple|mauve|lagoon|mint|lime|peach|orange|latte|normal|rosy|beet|plum|sea|sky|slate|teal|sage|brown|ocher|sand|tawny|brick|crimson)"
+
+# Strings
+color italic,normal            ""(\\.|[^"])*""
+
+# Comments
+color italic,normal            "(^|[[:space:]])#([^{].*)?$"
+color italic,black,lightwhite  "(TODO|FIXME|BUG|NOTE|CIV):?"
+
+# Show trailing whitespace
+color ,green                   "[[:space:]]+$"
