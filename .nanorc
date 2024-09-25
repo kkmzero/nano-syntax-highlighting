@@ -22,6 +22,7 @@ set tabstospaces
 
 include ~/.nano/syntax/extra/nanorc.nanorc
 include ~/.nano/syntax/extra/asm.nanorc
+include ~/.nano/syntax/extra/bash.nanorc
 include ~/.nano/syntax/extra/bat.nanorc
 include ~/.nano/syntax/extra/bf.nanorc
 include ~/.nano/syntax/extra/c.nanorc
@@ -36,5 +37,6 @@ include ~/.nano/syntax/extra/html.nanorc
 include ~/.nano/syntax/extra/ini.nanorc
 include ~/.nano/syntax/extra/lua.nanorc
 include ~/.nano/syntax/extra/makefile.nanorc
+include ~/.nano/syntax/extra/markdown.nanorc
 include ~/.nano/syntax/extra/pwn.nanorc
 include ~/.nano/syntax/extra/xml.nanorc
