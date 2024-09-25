@@ -1,0 +1,31 @@
+# Syntax highlighting/config dotfiles for GNU Nano
+# 2018 - 2024, Ivan Kmeťo
+#
+# CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+# https://creativecommons.org/publicdomain/zero/1.0/
+
+# Markdown Markup Language File
+syntax "markdown" "\.(md|markdown)$"
+
+
+color bold,sky               "^#.*"
+color bold,sky               start="<" end=">"
+color sand                   "&#?[[:alnum:]]*;"
+color bold,lightwhite        "^( )*(\*|\+|\-|[0-9]+\.) "
+color bold,rosy              "\[.*\](\([^\)]*\))?"
+color italic,lightwhite      "_[^_]*_"
+color italic,lightwhite      "\*[^\*]*\*"
+color bold,lightwhite        "__[^_]*__"
+color bold,lightwhite        "\*\*[^\*]*\*\*"
+color italic,rosy            "^>.*"
+color italic,mauve           "`[^`]*`"
+color italic,mauve           start="```" end="```"
+
+# Comments
+color italic,slate           start="<!--" end="-->"
+color italic,black,crimson   "(TODO|FIXME|BUG):?"
+color italic,black,lime      "NOTE:?"
+color italic,black,rosy      "CIV:?"
+
+# Show trailing whitespace
+color ,green                 "[[:space:]]+$"
